@@ -1,0 +1,13 @@
+H:\0 РПМ — Курсовой проект\Программа\webnovel\bin\Release\webnovel.exe.config
+H:\0 РПМ — Курсовой проект\Программа\webnovel\bin\Release\webnovel.exe
+H:\0 РПМ — Курсовой проект\Программа\webnovel\bin\Release\webnovel.pdb
+H:\0 РПМ — Курсовой проект\Программа\webnovel\obj\Release\bookservice.csproj.AssemblyReference.cache
+H:\0 РПМ — Курсовой проект\Программа\webnovel\obj\Release\bookservice.AuthorizationForm.resources
+H:\0 РПМ — Курсовой проект\Программа\webnovel\obj\Release\bookservice.CatalogForm.resources
+H:\0 РПМ — Курсовой проект\Программа\webnovel\obj\Release\bookservice.BookForm.resources
+H:\0 РПМ — Курсовой проект\Программа\webnovel\obj\Release\webnovel.Properties.Resources.resources
+H:\0 РПМ — Курсовой проект\Программа\webnovel\obj\Release\bookservice.UsersManagerForm.resources
+H:\0 РПМ — Курсовой проект\Программа\webnovel\obj\Release\bookservice.csproj.GenerateResource.cache
+H:\0 РПМ — Курсовой проект\Программа\webnovel\obj\Release\bookservice.csproj.CoreCompileInputs.cache
+H:\0 РПМ — Курсовой проект\Программа\webnovel\obj\Release\webnovel.exe
+H:\0 РПМ — Курсовой проект\Программа\webnovel\obj\Release\webnovel.pdb

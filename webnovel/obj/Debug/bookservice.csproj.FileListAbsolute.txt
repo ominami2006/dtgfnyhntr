@@ -1,0 +1,26 @@
+C:\Users\ominami\Desktop\bookservice\webnovel\obj\Debug\bookservice.csproj.AssemblyReference.cache
+C:\Users\ominami\Desktop\bookservice\webnovel\obj\Debug\bookservice.AuthorizationForm.resources
+C:\Users\ominami\Desktop\bookservice\webnovel\obj\Debug\bookservice.CatalogForm.resources
+C:\Users\ominami\Desktop\bookservice\webnovel\obj\Debug\bookservice.BookForm.resources
+C:\Users\ominami\Desktop\bookservice\webnovel\obj\Debug\webnovel.Properties.Resources.resources
+C:\Users\ominami\Desktop\bookservice\webnovel\obj\Debug\bookservice.csproj.GenerateResource.cache
+C:\Users\ominami\Desktop\bookservice\webnovel\obj\Debug\bookservice.csproj.CoreCompileInputs.cache
+C:\Users\ominami\Desktop\bookservice\webnovel\obj\Debug\webnovel.exe
+C:\Users\ominami\Desktop\bookservice\webnovel\obj\Debug\webnovel.pdb
+C:\Users\ominami\Desktop\bookservice\webnovel\bin\Debug\webnovel.exe.config
+C:\Users\ominami\Desktop\bookservice\webnovel\bin\Debug\webnovel.exe
+C:\Users\ominami\Desktop\bookservice\webnovel\bin\Debug\webnovel.pdb
+C:\Users\ominami\Desktop\bookservice\webnovel\obj\Debug\bookservice.UsersManagerForm.resources
+H:\0 РПМ — Курсовой проект\Программа\webnovel\bin\Debug\webnovel.exe.config
+H:\0 РПМ — Курсовой проект\Программа\webnovel\bin\Debug\webnovel.exe
+H:\0 РПМ — Курсовой проект\Программа\webnovel\bin\Debug\webnovel.pdb
+H:\0 РПМ — Курсовой проект\Программа\webnovel\obj\Debug\bookservice.csproj.AssemblyReference.cache
+H:\0 РПМ — Курсовой проект\Программа\webnovel\obj\Debug\bookservice.AuthorizationForm.resources
+H:\0 РПМ — Курсовой проект\Программа\webnovel\obj\Debug\bookservice.CatalogForm.resources
+H:\0 РПМ — Курсовой проект\Программа\webnovel\obj\Debug\bookservice.BookForm.resources
+H:\0 РПМ — Курсовой проект\Программа\webnovel\obj\Debug\webnovel.Properties.Resources.resources
+H:\0 РПМ — Курсовой проект\Программа\webnovel\obj\Debug\bookservice.UsersManagerForm.resources
+H:\0 РПМ — Курсовой проект\Программа\webnovel\obj\Debug\bookservice.csproj.GenerateResource.cache
+H:\0 РПМ — Курсовой проект\Программа\webnovel\obj\Debug\bookservice.csproj.CoreCompileInputs.cache
+H:\0 РПМ — Курсовой проект\Программа\webnovel\obj\Debug\webnovel.exe
+H:\0 РПМ — Курсовой проект\Программа\webnovel\obj\Debug\webnovel.pdb

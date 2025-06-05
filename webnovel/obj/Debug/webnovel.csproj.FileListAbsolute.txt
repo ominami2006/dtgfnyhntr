@@ -1,0 +1,12 @@
+C:\Users\ominami\Desktop\Практика\webnovel\webnovel\bin\Debug\webnovel.exe.config
+C:\Users\ominami\Desktop\Практика\webnovel\webnovel\bin\Debug\webnovel.exe
+C:\Users\ominami\Desktop\Практика\webnovel\webnovel\bin\Debug\webnovel.pdb
+C:\Users\ominami\Desktop\Практика\webnovel\webnovel\obj\Debug\webnovel.csproj.AssemblyReference.cache
+C:\Users\ominami\Desktop\Практика\webnovel\webnovel\obj\Debug\webnovel.CatalogForm.resources
+C:\Users\ominami\Desktop\Практика\webnovel\webnovel\obj\Debug\webnovel.Properties.Resources.resources
+C:\Users\ominami\Desktop\Практика\webnovel\webnovel\obj\Debug\webnovel.csproj.GenerateResource.cache
+C:\Users\ominami\Desktop\Практика\webnovel\webnovel\obj\Debug\webnovel.csproj.CoreCompileInputs.cache
+C:\Users\ominami\Desktop\Практика\webnovel\webnovel\obj\Debug\webnovel.exe
+C:\Users\ominami\Desktop\Практика\webnovel\webnovel\obj\Debug\webnovel.pdb
+C:\Users\ominami\Desktop\Практика\webnovel\webnovel\obj\Debug\webnovel.NovelForm.resources
+C:\Users\ominami\Desktop\Практика\webnovel\webnovel\obj\Debug\webnovel.AuthorizationForm.resources

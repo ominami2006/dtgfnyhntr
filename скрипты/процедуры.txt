@@ -1,0 +1,50 @@
+-- Создание хранимой процедуры для проверки логина
+CREATE PROCEDURE checkUserLogin
+    @Login NVARCHAR(255),
+    @HashedPassword NVARCHAR(255)
+AS
+BEGIN
+    SET NOCOUNT ON;
+    SELECT
+        id,
+        login,
+        is_admin -- Изменено с is_writer на is_admin
+    FROM
+        dbo.users
+    WHERE
+        login = @Login AND password = @HashedPassword;
+END
+GO
+
+-- Создание хранимой процедуры для регистрации нового пользователя
+CREATE PROCEDURE registerNewUser
+    @Login NVARCHAR(255),
+    @HashedPassword NVARCHAR(255),
+    @IsAdmin BIT
+AS
+BEGIN
+    SET NOCOUNT ON;
+    IF EXISTS (SELECT 1 FROM dbo.users WHERE login = @Login)
+    BEGIN
+        SELECT -1 AS NewUserID, CAST('Login already exists' AS NVARCHAR(100)) AS Message;
+        RETURN;
+    END
+    INSERT INTO dbo.users (login, password, is_admin)
+    VALUES (@Login, @HashedPassword, @IsAdmin);
+    SELECT SCOPE_IDENTITY() AS NewUserID, CAST('Success' AS NVARCHAR(100)) AS Message;
+END
+GO
+
+CREATE PROCEDURE getUserLoginById
+    @UserID INT
+AS
+BEGIN
+    SET NOCOUNT ON;
+    SELECT
+        login
+    FROM
+        dbo.users
+    WHERE
+        id = @UserID;
+END
+GO

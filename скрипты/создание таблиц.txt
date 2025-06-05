@@ -1,0 +1,74 @@
+-- Таблица пользователей
+CREATE TABLE users (
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    login NVARCHAR(255) UNIQUE NOT NULL,
+    password NVARCHAR(255) NOT NULL,
+    is_admin BIT NOT NULL -- 0 - читатель, 1 - админ
+);
+
+-- Таблица веб-романов
+CREATE TABLE books (
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    title NVARCHAR(255) NOT NULL,
+    admin_id INT NOT NULL,
+	writer_name NVARCHAR(255) NOT NULL,
+    publication_year SMALLINT,
+    age_rating SMALLINT,
+    description NVARCHAR(MAX),
+    cover_path NVARCHAR(255),
+
+    FOREIGN KEY (admin_id) REFERENCES users(id)
+);
+
+-- Таблица файлов веб-романов
+CREATE TABLE book_files (
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    book_id INT NOT NULL,
+    file_name NVARCHAR(255) NOT NULL,
+    publication_date DATE,
+    file_path NVARCHAR(255) NOT NULL CHECK (file_path LIKE '%.fb2'),
+
+    FOREIGN KEY (book_id) REFERENCES books(id)
+);
+
+-- Таблица комментариев
+CREATE TABLE comments (
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    user_id INT NOT NULL,
+    book_id INT NOT NULL,
+    comment_datetime DATETIME NOT NULL,
+    text NVARCHAR(MAX) NOT NULL,
+
+    FOREIGN KEY (user_id) REFERENCES users(id),
+    FOREIGN KEY (book_id) REFERENCES books(id)
+);
+
+-- Таблица жанров
+CREATE TABLE genres (
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    genre_name NVARCHAR(255) UNIQUE NOT NULL
+);
+
+-- Промежуточная таблица для связи книг и жанров (многие-ко-многим)
+CREATE TABLE book_genres (
+    book_id INT NOT NULL,
+    genre_id INT NOT NULL,
+    PRIMARY KEY (book_id, genre_id),
+
+    FOREIGN KEY (book_id) REFERENCES books(id),
+    FOREIGN KEY (genre_id) REFERENCES genres(id)
+);
+
+CREATE TABLE user_books (
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    user_id INT NOT NULL,
+    book_id INT NOT NULL,
+    status BIT NOT NULL, -- 0 - 'В процессе чтения', 1 - 'Прочитано'
+    current_chapter_number INT,   -- Номер главы, на которой остановился пользователь (для "В процессе чтения")
+    current_page_number INT,      -- Номер страницы, на которой остановился пользователь (для "В процессе чтения")
+    last_accessed_date DATETIME,  -- Дата последнего обращения к книге
+    
+    FOREIGN KEY (user_id) REFERENCES users(id),
+    FOREIGN KEY (book_id) REFERENCES books(id),
+    UNIQUE (user_id, book_id) -- Гарантирует, что пользователь может иметь только одну запись для одной книги
+);
